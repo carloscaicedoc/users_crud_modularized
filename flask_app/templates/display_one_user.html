@@ -8,17 +8,18 @@
     <title>User</title>
 </head>
 <body>
-    <div class="col-3 mx-auto .bg-secondary">
+    <div class="col-3 mx-auto bg-light mt-4">
 
-        <h2>...User {{user.id}}...</h2>
-        <p>Full Name: {{user.full_name()}}</p>
-        <p>First Name: {{user.first_name}}</p>
-        <p>Last Name: {{user.last_name}}</p>
-        <p>Email: {{user.email}}</p>
+        <h2 class="text-center p-4">Member {{user.id}}</h2>
+        <p class="text-center">{{user.full_name()}}</p>
+        <p class="text-center">First Name: {{user.first_name}}</p>
+        <p class="text-center">Last Name: {{user.last_name}}</p>
+        <p class="text-center">Email: {{user.email}}</p>
         
-        <p>Created ON: {{user.created_at}}</p>
-        <p>Last Updated: {{user.updated_at}}</p>
-        <a href="/users">Home Page</a>
+        <p class="text-center">Created ON: {{user.created_at}}</p>
+        <p class="text-center">Last Updated: {{user.updated_at}}</p>
+        <p class="text-center"><a class="btn btn-primary mb-4" href="/users" role="button">Home Page</a></p>
+        
     </div>
 </body>
 </html>
